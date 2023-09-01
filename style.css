@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+}
+
+.nav-bar {
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 50px;
+    font-weight: 600;
+    
+
+}
+
+.logo {
+    color: #41CD52;
+    font-weight: 800;
+}
+
+.nav-bar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    
+    
+}
+
+li a{
+    text-decoration: none;
+    padding: 10px 15px;
+    
+}
+
+li a:hover{
+    color: #41CD52;
+}
+
+.hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #FFF;
+    line-height: 1.6;
+}
+
+.buy-now-button {
+    background-color: #41CD52;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Nunito';
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    color: #FFF;
+    cursor: pointer;
+    
+}
+
+
+
+/* Hero uttons hover state */
+.buy-now-button:hover{
+    background-color: #FFF;
+    color: black;
+}
+
+.hero-section p {
+    margin-bottom: 20px;
+}
+
+
+/* main section */
+
+article{
+    width: 100%;
+    margin: 0 auto;
+    background: #F3F3F3;
+}
+
+.features {
+    text-align: center;
+    margin-bottom: 100px;
+    padding: 30px;
+    line-height: 1.5;
+}
+
+.card-section {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cards{
+    margin: 10px 15px;
+    padding: 10px;
+    background: #FFF;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+.icons {
+    width: 45px;
+    height: 45px;
+}
+
+.demographics-section{
+    margin-top: 100px;
+}
+
+
+.benefits-image{
+    color: #FFF;
+    width: 700px;
+}
+
+.video-section{
+    border-color: black;
+}
+
+.product-variants{
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.product-variants .color-variant:nth-child(1){
+    background-color: black;
+    border-radius: 6px;
+    width: 20px;
+    height: 20px;
+}
+
+.product-variants .color-variant:nth-child(2){
+    background-color: grey;
+    border-radius: 6px;
+    width: 20px;
+    height: 20px;
+}
+
+.product-variants .color-variant:nth-child(3){
+    background-color: rgb(192, 190, 190);
+    border-radius: 6px;
+    width: 20px;
+    height: 20px;
+}
+
+.mail-sign-up{
+    text-align: center;
+    padding: 150px;
+    line-height: 1.8;
+}
+
+.input-box{
+    width: 180px;
+    height: 40px;
+}
+
+footer{
+    padding: 30px;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.policy-agreement {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.policy-agreement ul li{
+    list-style: none;
+    padding: 5px;
+}
+
+.policy-agreement ul li:hover{
+    color: #41CD52;
+}
+
+.subscription-cto{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+
+ul li a{
+    cursor: pointer;
+}
+
+
+@media (max-width: 40em){
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-bar ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-bar ul li{
+        padding: 10px;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-product-image{
+        width: 300px;
+    }
+
+    .card-section{
+        display: flex;
+        flex-direction: column;
+    }
+}
